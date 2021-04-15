@@ -24,7 +24,6 @@
 #include "crc.h"
 #include "dcmi.h"
 #include "dma2d.h"
-#include "eth.h"
 #include "fatfs.h"
 #include "i2c.h"
 #include "ltdc.h"
@@ -39,6 +38,7 @@
 #include "usb_host.h"
 #include "gpio.h"
 #include "fmc.h"
+#include "app_touchgfx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -109,7 +109,6 @@ int main(void)
   MX_CRC_Init();
   MX_DCMI_Init();
   MX_DMA2D_Init();
-  MX_ETH_Init();
   MX_FMC_Init();
   MX_I2C1_Init();
   MX_I2C3_Init();
@@ -129,6 +128,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART6_UART_Init();
   MX_FATFS_Init();
+  MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
